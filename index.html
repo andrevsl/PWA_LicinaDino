@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css">
+<link rel="manifest" href="/manifest.json">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+@media only screen and (max-device-width: 480px) {
+    display: block;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="#home" class="w3-bar-item w3-button">Dino/Licina Catering</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">Sobre</a>
+      <a href="#menu" class="w3-bar-item w3-button">Menu</a>
+      <a href="#Galeria" class="w3-bar-item w3-button">Galeria</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+  <img class="w3-image" src="img/IMG-20191007-WA0016.jpg" alt="Hamburger Catering" width="1500" height="400" >
+  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+    <h1 class="w3-xxlarge">Le Catering</h1>
+  </div>
+</header>
+
+<audio id="player" autoplay loop>
+    <source src="photograph.mp3" type="audio/mp3">
+</audio>
+<script type="text/javascript">
+   document.addEventListener('click', musicPlay);
+   function musicPlay() {
+    document.getElementById('player').play();
+    document.removeEventListener('click', musicPlay);
+}
+</script>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+   
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">Sobre o Casal</h1><br>
+      <h5 class="w3-center">Desde 1942</h5>
+      <p class="w3-large" align="justify"> Casal monte alegrense de coração, deram à luz 14 filhos. Mais de duas dezenas de netos, e aproximadamente, 3 dígitos de bisnetos e taranetos, um conta extremamente complicada que só a Licina consegue fazer, e não ousamos tentá-la. Com histórias eternas de amor e implicâncias diárias. Arriscamos dizer que estas últimas fazem parte dos ingredientes secretos deste amor.</p>
+      <p class="w3-large" align="justify"> Fica aqui nossas felicitações e agradecimentos por esses 95 anos gloriosos e abençoados, ao Luís Vieira de Souza, Dino para Licina, ou Valdiso para os amigos. Lógico que o "Parabéns" tinha que ser no nível High Tech da nossa matriarca, Licina. Que hoje ensina como o usar o Youtube, e se pergunta como um ser humano pode esquecer o celular. </p>
+       <p class="w3-large" align="justify"> PS:Desculpa Vó!!!Falha da nossa geração!Hehehehe</p>
+	   <p class="w3-large" align="justify"> PS:Só a segunda matriarca na hierarquia pode estar na foto de Capa!heheheh</p>
+	  <!-- <p class="w3-large w3-text-grey w3-hide-medium">Menu do passeio por Barcaribe do casal</p> -->
+    </div>
+	
+	 <div class="w3-col m6 w3-padding-large">
+     <img src="img/IMG-20191007-WA0095.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750"  >
+    </div>
+	
+	
+  </div>
+  
+  <hr>
+  
+  <!-- Menu Section -->
+  <div class="w3-row w3-padding-64" id="menu">
+    <div class="w3-col l6 w3-padding-large">
+      <h1 class="w3-center">Menu do Casal</h1><br>
+      <h4>Tapioquinha com côco</h4>
+      <p class="w3-text-grey">Manioc pancakes with cocnunts</p><br>
+    
+      <h4>Cuscuz com côco</h4>
+      <p class="w3-text-grey">Couscous with cocnunts</p><br>
+    
+      <h4>Bolo Diet com adoçante</h4>
+      <p class="w3-text-grey">Diet cake without sugar</p><br>
+    
+      <h4>Vitamina de banana</h4>
+      <p class="w3-text-grey">Fresh milkshake of banana</p><br>
+    
+      <h4>Café com leite Especial (Só ela sabe fazer)</h4>
+      <p class="w3-text-grey">Special milk cofee (Only she knows how to do) </p><br>   
+	  
+	  <h4>Farofa de carne da vovó</h4>
+      <p class="w3-text-grey">GrandMa's manioc flour toasted in butter mixed with meat </p><br>   
+
+      <h4>Escondidinho de piracuí com mandioca</h4>
+      <p class="w3-text-grey">Fish pie with Manioc</p><br>     	  
+    </div>
+    
+    <div class="w3-col l6 w3-padding-large">
+      <img src="img/IMG-20191007-WA0074.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="700" >
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Contact Section -->
+  <!-- Top menu -->
+<div class="w3-center " id="Galeria">
+  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+    <h1 class="w3-center">Galeria</h1><br>
+  </div>
+</div>
+  
+ 
+<!-- Photo grid -->
+  <div class="w3-row w3-grayscale-min">
+    <div class="w3-quarter">
+      <img src="img/IMG-20191007-WA0019.jpg" style="width:100%" onclick="onClick(this)" alt="Filhos Santarenos!">
+      <img src="img/IMG-20191007-WA0058.jpg" style="width:100%" onclick="onClick(this)" alt="Família do Sid e Raulan, raízes belenenses, mas santarenos de coração!">
+      <img src="img/IMG-20191007-WA0091.jpg" style="width:100%" onclick="onClick(this)" alt="Confraternização boa!">
+   </div>
+    
+   <div class="w3-quarter">
+      <img src="img/IMG-20191007-WA0056.jpg" style="width:100%" onclick="onClick(this)" alt="A mais ciumenta, mas com o coração proporcional ao tamanho!">
+      <img src="img/IMG-20191007-WA0073.jpg" style="width:100%" onclick="onClick(this)" alt="Família do Milton!">
+      <img src="img/IMG-20191007-WA0028.jpg" style="width:100%" onclick="onClick(this)" alt="Família da Suelen!">
+    </div>
+    
+    <div class="w3-quarter">
+      <img src="img/IMG-20191007-WA0061.jpg" style="width:100%" onclick="onClick(this)" alt="Casamento mais recente dos filhos, Tia Graça enrolou o Jósimo anos!Defendendo a classe!">
+      <img src="img/IMG-20191007-WA0054.jpg" style="width:100%" onclick="onClick(this)" alt="Tia Raimunda, irmã do vovô!">
+      <img src="img/IMG-20191007-WA0094.jpg" style="width:100%" onclick="onClick(this)" alt="Encontro de gerações!Filhos, netos e bisnetos! Obs: Jósimo com um olho no peixe e o outro no gato!">">
+    </div>
+
+    <div class="w3-quarter">
+      <img src="img/IMG-20191007-WA0057.jpg" style="width:100%" onclick="onClick(this)" alt="Uncle Carlos's Family com Cabelo/Barba Branca, mas com o mesmo amor de sempre!">
+      <img src="img/IMG-20191007-WA00211.jpg" style="width:100%" onclick="onClick(this)" alt="Tio Zé, Tia Alice e Tia Jesus marcando presença!">
+      <img src="img/IMG-20191007-WA0093.jpg" style="width:100%" onclick="onClick(this)" alt="Encontro de gerações 2!">
+    </div>
+  </div>
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+<!--       <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a> -->
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+  
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+</script>
+<script src="js/main.js"></script>
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-32">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+</body>
+
+
+</html>
