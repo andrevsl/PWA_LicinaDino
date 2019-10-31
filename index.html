@@ -5,11 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/style.css">
 <link rel="manifest" href="/manifest.json">
+<link href='https://fonts.googleapis.com/css?family=Amatic SC' rel='stylesheet'>
 <!-- coloque isso dentro de `head` -->
 <link rel="apple-touch-icon" href="icons\icon.jpg">
 <link rel="apple-touch-startup-image" href="icons\splash.jpg">
 
 <style>
+
 body {font-family: "Times New Roman", Georgia, Serif;}
 h1, h2, h3, h4, h5, h6 {
   font-family: "Playfair Display";
@@ -22,17 +24,24 @@ h1, h2, h3, h4, h5, h6 {
 <body>
 
 <!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
-    <a href="#home" class="w3-bar-item w3-button">Dino/Licina Catering</a>
+<div class="w3-right">
+  <div class="w3-right w3-white w3-padding" >
+    <a href="#home" class="fontsidebar w3-bar-item w3-button">Dino/Licina Catering</a>
     <!-- Right-sided navbar links. Hide them on small screens -->
-    <div class="w3-right w3-hide-small">
-      <a href="#about" class="w3-bar-item w3-button">Sobre</a>
-      <a href="#menu" class="w3-bar-item w3-button">Menu</a>
-      <a href="#Galeria" class="w3-bar-item w3-button">Galeria</a>
-    </div>
-  </div>
 </div>
+
+<!-- Sidebar -->
+<div class="fontsidebar w3-sidebar w3-bar-block w3-border-left" style="display:none;z-index:5" id="mySidebar">
+  <button class="w3-bar-item w3-button w3-large" onclick="w3_close()">Close &times;</button>
+      <a href="#about" class="w3-bar-item w3-button">Sobre</a>
+      <a href="#menu" class="w3-bar-item w3-button">Menu</a>
+      <a href="#Galeria" class="w3-bar-item w3-button">Galeria</a>
+  </div>
+
+
+<div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+<button class=" w3-button w3-white w3-xxlarge" onclick="w3_open()">&#9776;</button>
+ 
 
 <!-- Header -->
 <header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
